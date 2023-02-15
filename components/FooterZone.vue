@@ -20,7 +20,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
-              <div class="row">
+              <div class="row hide_mobile">
                 <div class="col-6">
                   <h3>เมนู</h3>
                   <li
@@ -103,7 +103,7 @@
                 <a href="#">ข้อตกลงและเงื่อนไข</a> <span>|</span>
                 <a href="#">นโยบายข้อมูลส่วนตัว</a>
               </div>
-              <div>
+              <div class="control_line_footer">
                @2019 Phatra A© สงวนลิขสิทธิ์ 2562 บริษัทหลักทรัพย์จัดการกองทุน ภัทร จำกัดsset  All rights reserved.
               </div>
             </div>
@@ -206,6 +206,19 @@ export default {
   font-size: 16px;
   line-height: 1.75;
 }
+.footer-center-links{
+  height: 30px;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+  .control_line_footer{
+    height: 30px;
+      white-space: initial;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  }
 .ico_contact {
   margin: 10px 10px 10px 0px;
   width: 23px;
@@ -249,7 +262,7 @@ export default {
 
 @media screen and (max-width:1180px){
     .crack_container{
-      margin: 0px 20px;
+      margin: 0px 0px;
     }
     .footer_logo{
       left: 0;
@@ -262,5 +275,15 @@ export default {
     .footer-container{
       text-align: center;
     }
+    .flex_items_direc{
+      flex-direction: column;
+    }
 }
+
+@media screen and (max-width:767px){
+  .hide_mobile{
+    display: none;
+  }
+}
+
 </style>

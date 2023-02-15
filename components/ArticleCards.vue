@@ -1,6 +1,12 @@
 <template>
   <div class="article-card-layout">
     <div class="article-zone">
+      <div class="nav_kkp" style="padding-right:27px;">
+        <h1>Article</h1>
+        <button>
+          ดูทั้งหมด <span> <i class="fa-solid fa-chevron-right"></i></span>
+        </button>
+      </div>
       <div class="article-zone-higlight a1 a2 a3">
         <div class="article-zone-higlight-cover c1 c2 c3">
           <img src="/article/img-article-1.png" alt="" srcset="" />
@@ -46,31 +52,39 @@
         </div>
       </div>
     </div>
-    <div class="gadget-zone r1 r2 r3">
+ <div>
+      <div class="nav_kkp">
+        <h1>News</h1>
+        <button>
+          ดูทั้งหมด <span> <i class="fa-solid fa-chevron-right"></i></span>
+        </button>
+      </div>
+   <div class="gadget-zone r1 r2 r3">
+      
       <div class="side-slide or1 or2">
-        <side-slide/>
+        <side-slide />
       </div>
       <div class="side-iframe or1 or2">
-        <set-index/>
+        <set-index />
       </div>
     </div>
+ </div>
   </div>
 </template>
 
 <script>
-import SideSlide from '@/components/SideSlide'
-import SetIndex from '@/components/SetIndex.vue';
+import SideSlide from "@/components/SideSlide";
+import SetIndex from "@/components/SetIndex.vue";
 export default {
-    components:{
-        SideSlide,
-        SetIndex
-    }
+  components: {
+    SideSlide,
+    SetIndex,
+  },
 };
 </script>
 
 <style>
 .article-card-layout {
-  background: fff;
   width: 100%;
   height: 814px;
   width: 100%;
@@ -81,11 +95,11 @@ export default {
 }
 .article-zone {
   width: 100%;
-  height: 800px;
+  margin-bottom: 64px;
 }
 .article-zone img {
   width: 100%;
-  height: 100%;
+
   object-fit: cover;
 }
 .gadget-zone {
@@ -112,7 +126,8 @@ export default {
 .article-zone-higlight-cover {
   width: 428px;
   background: #000;
-  height: 298px;
+  height: auto;
+  margin-bottom: 20px;
   flex-shrink: 0;
 }
 .article-zone-higlight-detail {
@@ -127,7 +142,7 @@ export default {
   line-height: 1.25;
   color: #594f74;
   max-height: 90px;
-    white-space: initial;
+  white-space: initial;
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -140,7 +155,7 @@ export default {
   margin-top: 17px;
   color: #84848f;
   max-height: 120px;
-    white-space: initial;
+  white-space: initial;
   overflow: hidden;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
@@ -171,8 +186,8 @@ export default {
 }
 .article-zone-column-cover {
   width: 100%;
-  height: 256px;
-  background: violet;
+  max-height: 256px;
+  overflow: hidden;
   flex-shrink: 0;
 }
 .article-zone-column-detail {
@@ -212,7 +227,7 @@ export default {
 }
 
 @media screen and (max-width: 990px) {
-     .article-zone-higlight-cover.c2 {
+  .article-zone-higlight-cover.c2 {
     flex-shrink: 0;
   }
   .sub-zone.e1 {
@@ -247,18 +262,17 @@ export default {
     width: 100%;
     height: auto;
   }
-  .or1{
+  .or1 {
     margin: 10px;
   }
-
 }
 @media screen and (max-width: 620px) {
-     .gadget-zone.r2 {
-        flex-direction: column;
-        margin: 0;
-     }
-     .or2{
-        margin: 0;
-     }
+  .gadget-zone.r2 {
+    flex-direction: column;
+    margin: 0;
+  }
+  .or2 {
+    margin: 0;
+  }
 }
 </style>

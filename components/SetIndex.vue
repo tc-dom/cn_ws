@@ -2,7 +2,7 @@
   <div class="set-index">
     <h1>Set Index</h1>
     <div class="iframe-scope">
-
+        <img src="/set-index.png" alt="" srcset="">
     </div>
   </div>
 </template>
@@ -31,5 +31,10 @@ export default {
     height: 289px;
     border: 1px solid#dcdcdc;
     margin: auto;
+}
+.iframe-scope img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>
