@@ -11,7 +11,7 @@
 
     <div class="right_control">
       <b-nav-item>
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-magnifying-glass" style="font-size:20px;"></i>
       </b-nav-item>
 
       <b-nav-item-dropdown text="TH" right>
@@ -88,6 +88,9 @@
 @media screen and (max-width: 720px) {
   .icon_control_main{
     display: none !important;
+  }
+  .hamburger-icon{
+    left: 20px;
   }
 }
 </style>

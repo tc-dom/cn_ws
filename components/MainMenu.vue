@@ -130,5 +130,10 @@ export default {
     overflow-y: hidden;
     overflow-x: auto;
   }
+  .main-menu-btn{
+  height: 66px;
+  line-height: 1;
+  padding-left: 10px;
+}
 }
 </style>
