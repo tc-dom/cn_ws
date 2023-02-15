@@ -72,6 +72,7 @@ body{
 .nav_kkp span{
     width: 28px;
   height: 28px;
+  padding-top:2px;
   display: inline-block;
   margin: 0 0 0 4px;
   object-fit: contain;
